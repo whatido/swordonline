@@ -1,0 +1,36 @@
+body {
+	background: #000;
+}
+
+main {
+	background: #FFF;
+	width: 400px;
+	height: 240px;
+}
+
+.csstransforms {
+	transform: rotate(90deg);
+}
+
+article {
+    background-color: #FFF;
+    border-radius: 12px;
+    padding: 7.5px;
+    width: calc(100% - 7.5px);
+    height: calc(100% - 7.5px);
+}
+.leftBar {
+    padding-top: 7.5px;
+    padding-left: 7.5px;
+}
+.leftBar::before {
+	content: "";
+	background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% - 15px);
+	height: 100%;
+	z-index: -1;
+	border-radius: 12px;
+}
